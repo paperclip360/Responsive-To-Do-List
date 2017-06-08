@@ -1,21 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Todos List</title>
+	<link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">	
 	<link rel="stylesheet" type="text/css" href="assets/css/todos.css">
 	<script type="text/javascript" src="assets/js/lib/jquery-3.2.1.min.js"></script>
 </head>
 <body>
 
-	<div id="container">
-		<h1>Todo List</h1>
-		<input type="text">
-		<ul>
-			<li><span> X </span>Test todo</li>
-			<li><span> X </span>Test todo</li>
-			<li><span> X </span>Test todo</li>
-		</ul>
+	<div class="container">
+		<div class="row">
+		
+			<h1>Todo List<i class="fa fa-eye-slash" aria-hidden="true"></i><i class="fa fa-list"></i></h1>
+			<div class="inputTodo"><input type="text" placeholder="Add New Todo" maxlength="10"></div>
+			<ul class="list-group">
+			</ul>
+			<div class="list-item"><i class="fa fa-eraser " aria-hidden="true"></i></div>
+		</div>
+		<div class="row">
+		<p style="padding: 0 auto; text-align: center; color: white;">Site by Denis Rams</p>
+		</div>
 	</div>
 	
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="assets/js/todos.js"></script>
 </body>
 </html>
